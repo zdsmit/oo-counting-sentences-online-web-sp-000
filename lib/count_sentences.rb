@@ -26,17 +26,7 @@ class String
     end
   end
 
-  example = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-
   def count_sentences
-    sentences = self.split(/\.|\?|\!/)
-    sentences.each do |sentence|
-      sentence.each do |word|
-        if word.size < 2
-          sentence.delete
-        end
-      end
-    end
+    sentences = self.split(/\.|\?|\!/).delete_if{|word|word.size < 2}
     sentences.size
-  end
 end
