@@ -30,11 +30,13 @@ class String
     sentences = self.split(/[\W]/)
     sentences.each do |sentence|
       valid_sentences = []
-      output = valid_sentences.count
-      unless sentence == ""
+      invalid_sentences = []
+      if sentence == ""
+        invalid_sentences << sentence
+      else
         valid_sentences << sentence
       end
-      output
+      valid_sentences.count
     end
   end
 
