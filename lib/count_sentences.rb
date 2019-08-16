@@ -29,6 +29,7 @@ class String
   def count_sentences
     sentences = self.split(/\.|\?|\!/)
     sentences.each do |sentence|
+      binding.pry
       if sentence.size < 2 or sentence == ""
         sentence.delete
       end
