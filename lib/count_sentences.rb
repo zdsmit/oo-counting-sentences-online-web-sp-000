@@ -34,7 +34,5 @@ class String
       end
     end
     sentences.size
-    binding.pry
   end
-
 end
