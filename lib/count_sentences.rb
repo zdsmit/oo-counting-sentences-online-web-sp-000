@@ -29,7 +29,7 @@ class String
   def count_sentences
     sentences = self.split(/\.|\?|\!/)
     sentences.each do |sentence|
-      if sentence.length < 2
+      if sentence.size < 2
         sentence.delete
       end
     end
