@@ -31,10 +31,9 @@ class String
     sentences.each do |sentence|
       if sentence.size < 2 or sentence == ""
         sentence.delete
-
       end
     end
-    sentences.size
+    sentences.size - 1
   end
 
 end
