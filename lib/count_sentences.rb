@@ -33,7 +33,7 @@ class String
       unless sentence == ""
         valid_sentences << sentence
       end
-      return valid_sentences.count
+      valid_sentences.count
     end
   end
 
