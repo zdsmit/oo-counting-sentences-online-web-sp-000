@@ -33,7 +33,7 @@ class String
         sentence.delete
       end
     end
-    sentences
+    sentences.count
   end
 
 end
