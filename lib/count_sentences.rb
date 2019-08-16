@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/[\W]/)
+    sentences = self.split(/\.|\?|\!/)
     sentences.each do |sentence|
       valid_sentences = []
       invalid_sentences = []
