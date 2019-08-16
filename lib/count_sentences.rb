@@ -27,14 +27,7 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/[\W]/)
-    sentences.each do |sentence|
-      valid_sentences = []
-      unless sentence == ""
-        valid_sentences << sentence
-      end
-      return valid_sentences.count
+    sentences = self.split(/\.|\?|\!/).delete_if {|word|word.size < 2}
+    sentences.size
     end
   end
-
-end
