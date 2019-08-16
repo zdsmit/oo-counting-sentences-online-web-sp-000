@@ -29,15 +29,9 @@ class String
   def count_sentences
     sentences = self.split(/\.|\?|\!/)
     sentences.each do |sentence|
-      valid_sentences = []
-      invalid_sentences = []
-      if sentence == ""
-        invalid_sentences << sentence
-      else
-        valid_sentences << sentence
-      end
-      valid_sentences.count
+      sentence.delete_if(length < 2)
     end
+    sentencees
   end
 
 end
