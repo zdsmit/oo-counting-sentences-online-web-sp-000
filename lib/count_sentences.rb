@@ -31,7 +31,7 @@ class String
     sentences.each do |sentence|
       sentence.delete_if(length < 2)
     end
-    sentencees
+    sentences
   end
 
 end
