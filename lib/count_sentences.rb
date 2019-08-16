@@ -31,9 +31,9 @@ class String
     sentences.each do |sentence|
       if sentence.size < 2 or sentence == ""
         sentence.delete
+        binding.pry
       end
     end
-    binding.pry
     sentences.count
   end
 
