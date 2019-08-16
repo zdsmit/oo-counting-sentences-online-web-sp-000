@@ -34,7 +34,7 @@ class String
         binding.pry
       end
     end
-    sentences.count
+    sentences.size
   end
 
 end
