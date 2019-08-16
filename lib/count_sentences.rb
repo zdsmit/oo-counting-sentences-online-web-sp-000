@@ -27,6 +27,7 @@ class String
   end
 
   def count_sentences
+    example = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
     sentences = self.split(/\.|\?|\!/)
     sentences.each do |sentence|
       if sentence.size < 2 or sentence == ""
@@ -35,4 +36,5 @@ class String
     end
     sentences.size
   end
+  binding.pry
 end
